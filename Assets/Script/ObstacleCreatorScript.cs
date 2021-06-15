@@ -25,7 +25,7 @@ public class ObstacleCreatorScript : MonoBehaviour
 
     private float distance = 0.0f;  // 장애물 초기 생성 위치부터 가장 마지막 장애물의 위치까지의 x값의 차이
     private int ObstacleCount = 2;  // 각 종류의 장애물 갯수, 즉 총 장애물 갯수는 장애물 종류를 곱한 값
-    private float outofScreen = 25.0f;
+    private float outofScreen = 25.0f;  // 이 값이 너무 작을경우 이 후 장애물이 생성되지 않는 경우가 생김. 132번째 줄 조건문 참고
     private float resetPosition_x;
     private float resetPosition_y;
     private float speed = 5.0f;

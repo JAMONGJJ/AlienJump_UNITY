@@ -11,7 +11,7 @@ namespace DataInfo
     public class GameData
     {
         public int HighestScore;
-        public bool TutorialDone = false;
+        public bool TutorialDone;
     }
 }
 
@@ -235,21 +235,13 @@ public class ManagingScript : MonoBehaviour
     // 데이터 로드
     private static GameData Load()
     {
-        if(File.Exists(dataPath) && dataPath.Length != 0)
+        if(File.Exists(dataPath))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream fs = File.Open(dataPath, FileMode.Open);
-            if(fs.Length != 0)
-            {
-                GameData data = (GameData)bf.Deserialize(fs);
-                fs.Close();
-                return data;
-            }
-            else
-            {
-                GameData data = new GameData();
-                return data;
-            }
+            FileStream fs = new FileStream(dataPath, FileMode.Open);
+            GameData data = (GameData)bf.Deserialize(fs);
+            fs.Close();
+            return data;
         }
         else
         {
