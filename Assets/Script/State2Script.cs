@@ -37,12 +37,12 @@ public class State2Script : MonoBehaviour
             new List<int> { 1, 0, 0, -1, -1, 100 },
             new List<int> { 1, 1, 3, -1, -1, 200 },
             new List<int> { 2, 0, 0, 0, 0, 300 },
-            new List<int> { 2, 2, 0, 1, 0, 400 },
+            new List<int> { 2, 2, 0, 1, 0, 300 },
             new List<int> { 2, 0, 3, 0, 1, 500 },
-            new List<int> { 2, 3, 1, 0, 2, 600 },
+            new List<int> { 2, 3, 1, 0, 2, 500 },
             new List<int> { 2, 1, 2, 3, 0, 1000 },
             new List<int> { 2, 1, 2, 0, 1, 1500 },
-            new List<int> { 2, 1, 2, 3, 1, 2400 },
+            new List<int> { 2, 1, 2, 3, 1, 2500 },
     };
     private static List<int> stageOffset = new List<int>(); // 각 스테이지 별 점수를 더해서 다음 스테이지 진입 점수를 계산해놓은 리스트
     private int stageCount; // 스테이지 총 갯수
