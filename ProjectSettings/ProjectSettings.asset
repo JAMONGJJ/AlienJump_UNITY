@@ -167,7 +167,7 @@ PlayerSettings:
     Android: com.ByeolddangCompany.AlienJumpMultiply
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 123
+  AndroidBundleVersionCode: 124
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
